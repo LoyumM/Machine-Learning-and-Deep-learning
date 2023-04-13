@@ -1,0 +1,61 @@
+Q. What are bag of words?
+
+- A "bag of words" is a simple and commonly used model in natural language processing (NLP) that represents a piece of text as a collection, 
+or "bag", of its individual words, disregarding grammar and word order but keeping track of the frequency of each word.
+
+In a bag of words representation, a document is transformed into a vector, where each element of the vector corresponds to a particular word 
+in the vocabulary, and the value of the element represents the frequency of that word in the document. The order of the words in the document
+ is not considered, only the occurrence of the words.
+
+This approach is used in various NLP tasks such as text classification, sentiment analysis, and document retrieval, as it allows for 
+efficient and relatively simple processing of large amounts of text data. However, it does not capture the context or meaning of the words 
+and can result in loss of important information.
+
+
+Q. Difference between neural word embedding and tf-idf.
+
+- Neural word embeddings and TF-IDF (Term Frequency-Inverse Document Frequency) are both methods used in natural language processing for 
+representing text data, but they differ in their approach and purpose. TF-IDF is a traditional technique used to represent text data as a 
+sparse vector that captures the importance of each word in a document or corpus. The value of each element in the vector is determined by 
+the frequency of the word in the document, as well as its frequency in the entire corpus. The higher the TF-IDF score of a word in a 
+document, the more important it is for that document. 
+
+On the other hand, neural word embeddings are learned representations of words that aim to capture the semantic and contextual 
+relationships between them. Neural word embeddings are typically generated using deep learning models, such as Word2Vec, GloVe or 
+FastText, that are trained on large amounts of text data. These models learn to map words to vectors in such a way that words with similar
+meanings or contexts are represented by vectors that are closer together in a high-dimensional space. 
+
+While TF-IDF is useful for tasks such as text classification, document retrieval and information retrieval, neural word embeddings 
+are more suitable for tasks such as natural language understanding, sentiment analysis, and language translation. Neural word embeddings 
+are more powerful at capturing the nuances of language and the relationships between words, whereas TF-IDF is a more straightforward 
+and interpretable way of representing text data.
+
+
+Q. What are Word2Vec and GloVe?
+
+- Word2Vec and GloVe (Global Vectors) are two popular techniques for generating word embeddings, which are dense vector representations 
+of words that capture their semantic and syntactic meaning.
+
+Word2Vec is a deep learning model that learns word embeddings by training a neural network on large amounts of text data. The model is 
+trained to predict the probability of a word given its context (the surrounding words in a sentence), or the probability of a context 
+given a word. The weights of the hidden layer in the neural network are used as the word embeddings.
+
+GloVe, on the other hand, is a model that learns word embeddings by considering the co-occurrence statistics of words in a corpus. The 
+model is trained to minimize the difference between the dot product of two word vectors and the log of the probability of their 
+co-occurrence. The resulting word embeddings capture the meaning of words based on their distributional similarity.
+
+Both Word2Vec and GloVe have been widely used in natural language processing tasks, such as sentiment analysis, machine translation, 
+and information retrieval. Word2Vec is particularly known for its ability to capture semantic relationships between words, while GloVe 
+is known for its efficiency and scalability on large datasets.
+
+---------------------------------------------------------------------------------------------------------------------------------------
+
+## BASIC DEFINITIONS FOR NLP:
+
+- Corpus: A collection of text documents used for training and evaluation of NLP models.
+
+- Tokenization: The process of splitting a text into smaller units, such as words or subwords, to facilitate further analysis.
+
+- Part-of-speech (POS) tagging: The process of labeling each word in a text with its grammatical category, such as noun, verb, or adjective.
+
+- Parsing: The process of analyzing the grammatical structure of a sentence to determine its meaning.
