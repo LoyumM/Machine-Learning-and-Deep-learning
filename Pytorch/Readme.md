@@ -1,2 +1,3 @@
-Contains notes and practices for PyTorch.
-Study material: https://www.learnpytorch.io/
+- Contains notes and practices for PyTorch.
+  - Study material: https://www.learnpytorch.io/
+- Also contains notes from this video: https://www.youtube.com/watch?v=GIsg-ZUy0MY
